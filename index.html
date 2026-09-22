@@ -533,31 +533,56 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form">
-                            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                                <input type="text" name="name" ... />
+                          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
-<input type="email" name="email" ... />
+    <input type="hidden" name="form-name" value="contact">
 
-<input type="text" name="subject" ... />
+    <p style="display:none;">
+        <label>
+            Don't fill this out:
+            <input name="bot-field">
+        </label>
+    </p>
 
-<textarea name="message" ...></textarea>
-                                <input type="hidden" name="form-name" value="contact" />
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name" />
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" placeholder="Your Email" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject" />
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                                </div>
-                                <div><button type="submit">Send Message</button></div>
-                            </form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input type="text"
+                   name="name"
+                   class="form-control"
+                   placeholder="Your Name"
+                   required />
+        </div>
+
+        <div class="form-group col-md-6">
+            <input type="email"
+                   name="email"
+                   class="form-control"
+                   placeholder="Your Email"
+                   required />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="text"
+               name="subject"
+               class="form-control"
+               placeholder="Subject"
+               required />
+    </div>
+
+    <div class="form-group">
+        <textarea name="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"
+                  required></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Send Message</button>
+    </div>
+
+</form>
                         </div>
                     </div>
                 </div>
