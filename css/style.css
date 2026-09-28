@@ -1148,3 +1148,204 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .copyright p:last-child {
     margin: 0;
 }
+/* ==========================================
+   MOBILE RESPONSIVE FIX
+   ========================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bootstrap/container width fix */
+.container,
+.container-fluid {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Make rows use full available width */
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    .top-header {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .top-header .container {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 15px;
+    }
+
+    .top-header img {
+        width: 170px;
+        height: 170px;
+        max-width: 80%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-width: 10px;
+    }
+
+    .top-header h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+        word-break: normal;
+    }
+
+    .top-header h2 {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+        height: auto;
+    }
+
+    /* All sections full width */
+    section,
+    .about,
+    .experience,
+    .services,
+    .portfolio,
+    .testimonials,
+    .contact,
+    .footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Bootstrap columns */
+    [class*="col-"] {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 40px 0 15px 0;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about p {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .section-header h2,
+    .section-header h3 {
+        font-size: 28px;
+    }
+
+    .experience {
+        padding: 40px 0;
+        font-size: initial;
+    }
+
+    .experience .exp-column {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .services {
+        padding: 40px 0;
+    }
+
+    .portfolio {
+        padding: 40px 0 20px 0;
+    }
+
+    .portfolio .portfolio-item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .portfolio .portfolio-item figure {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact .contact-info p {
+        font-size: 15px;
+        text-align: left;
+        word-break: break-word;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer .copyright p {
+        font-size: 14px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+    .top-header h1 {
+        font-size: 26px;
+    }
+
+    .top-header h2 {
+        font-size: 16px;
+    }
+
+    .top-header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-header h2,
+    .section-header h3 {
+        font-size: 25px;
+    }
+}
