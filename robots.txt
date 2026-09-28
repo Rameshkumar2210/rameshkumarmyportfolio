@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rameshkumarprofile.netlify.app/sitemap.xml
