@@ -1148,97 +1148,64 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .copyright p:last-child {
     margin: 0;
 }
-/* ==========================================
-   MOBILE RESPONSIVE FIX
-   ========================================== */
-
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Bootstrap/container width fix */
-.container,
-.container-fluid {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Make rows use full available width */
-.row {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* ==========================================
-   MOBILE VIEW ONLY
-   ========================================= */
+/* ===== MOBILE FIX: PROJECTS, COURSES & CONTACT ===== */
 
 @media screen and (max-width: 768px) {
 
-    html,
-    body {
+    .portfolio,
+    .services,
+    .contact {
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        overflow-x: hidden !important;
+        overflow: hidden !important;
     }
 
-    .container {
+    .portfolio .container,
+    .services .container,
+    .contact .container {
         width: 100% !important;
         max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
     }
 
-    .row {
+    .portfolio .row,
+    .services .row,
+    .contact .row {
         width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
 
-    .row > [class*="col-"] {
+    .portfolio .portfolio-item {
         width: 100% !important;
         max-width: 100% !important;
-        flex: 0 0 100% !important;
-    }
-
-    .top-header {
-        width: 100% !important;
-        min-width: 0 !important;
-    }
-
-    .about img {
-        width: 100% !important;
         height: auto !important;
     }
 
-    .about,
-    .experience,
-    .services,
-    .portfolio,
-    .testimonials,
-    .contact,
-    .footer {
+    .portfolio .portfolio-item figure {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .portfolio .portfolio-item img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .services .single-service {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact .form,
+    .contact .contact-info {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .contact .form input,
+    .contact .form textarea {
         width: 100% !important;
         max-width: 100% !important;
     }
